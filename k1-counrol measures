@@ -1,0 +1,22 @@
+Countermeasures and Mitigations -kafka
+
+Regularly update Kafka to the latest version and deprecate the use of backward-compatible vulnerable versions
+Implement rate limiting and consumer lag monitoring
+Ensure strict access controls and monitoring around offset manipulation
+Change all default credentials and implement strong authentication mechanisms
+Implement rate limiting and use firewalls to block malicious traffic
+Regularly audit third-party software and update them
+Use SSL/TLS encryption for interbroker communication
+Use firewalls to restrict JMX port access and enforce strong authentication
+Implement input validation and strong access control
+Use SSL/TLS encryption for data in transit
+Regularly update Kafka and Java to the latest secure versions
+Implement monitoring and alerts for unusual partition-level activities
+Set appropriate quotas and enforce them
+Implement rate limiting and resource-based quotas
+Implement strict access control and input validation for schema manipulation
+Use strong authentication and authorization mechanisms for Control API
+Implement strong authentication and authorization for producers
+Implement strong authentication and authorization mechanisms for all users
+Use rate limiting, quotas, and monitoring to prevent system exhaustion
+Implement strong security configurations for Zookeeper, including authentication and ACLs
