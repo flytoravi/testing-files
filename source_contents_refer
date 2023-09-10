@@ -1,1 +1,15 @@
-Always use this trick
+1.Attackers gain unauthorized access to sensitive Elasticsearch indices and documents. This threat often arises due to lack of authentication, weak passwords, or improperly configured access rights.
+2.Attackers exploit Elasticsearch clusters that are exposed to the internet with default configurations, leading to data breaches or unauthorized actions.
+3.Attackers execute arbitrary code on Elasticsearch nodes by exploiting vulnerabilities or misconfigurations, potentially compromising the entire cluster.
+4.Attackers alter documents or indices in Elasticsearch, leading to data integrity issues, misinformation, or application malfunctions.
+5.Attackers overload Elasticsearch with numerous queries, potentially causing it to crash or slow down, thereby denying service to legitimate users.
+6.Attackers query Elasticsearch's metadata or system indices to gain information about the cluster's structure, nodes, and configurations, which can be used for further attacks.
+7.Attackers exploit misconfigured Elasticsearch clusters to access or manipulate snapshot APIs, potentially leading to data theft or corruption of backups.
+8.Attackers exploit vulnerabilities or misconfigurations in Elasticsearch's role-based access controls to gain higher privileges.
+9.Elasticsearch lacks adequate logging or monitoring mechanisms, making it difficult to detect or trace malicious activities.
+10.Attackers add a malicious node to an Elasticsearch cluster, potentially gaining access to data or influencing cluster behavior.
+11.Attackers utilize dynamic scripting capabilities to run malicious scripts, leading to potential data exposure or server exploits.
+12.Attackers access internal or system indices that may expose sensitive information about the Elasticsearch environment or its data.
+13.Attackers position themselves between Elasticsearch clients and servers, intercepting, modifying, or redirecting queries and responses.
+14.In the absence of encryption (e.g., using HTTPS), data transferred between Elasticsearch nodes or between client and server can be intercepted and read by attackers.
+15.Attackers find exposed API keys related to Elasticsearch, allowing them unauthorized access or the ability to perform actions on behalf of legitimate users.
