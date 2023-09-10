@@ -1,0 +1,20 @@
+Different Kafka API versions might have different vulnerabilities. An attacker could exploit these if the broker is backward-compatible with vulnerable versions.
+Attackers may deliberately introduce a high volume of data, causing consumer lags and potential service interruptions.
+Malicious actors might manipulate the offset to reprocess or skip messages, leading to potential data loss or repeated data processing.
+Attackers may exploit default credentials to gain unauthorized access to Kafka.
+Attackers could flood the Kafka API, consuming all available resources and causing potential service disruptions.
+Some third-party connectors or plugins might introduce vulnerabilities or might be misconfigured.
+If interbroker communication isn't encrypted, an attacker can potentially sniff data being transferred between brokers.
+Java Management Extensions (JMX) ports, if exposed and unprotected, can be a point of entry for attackers.
+Attackers may insert malicious records in the hope they become the compacted values, thereby persisting in the logs.
+Without proper encryption, data in transit can be intercepted and accessed by malicious actors.
+Using outdated Kafka or Java versions can make the system vulnerable to known exploits.
+By targeting specific partitions, attackers might cause data unavailability for certain topics.
+If quotas aren't properly set or enforced, a producer could potentially flood the Kafka cluster with data.
+Attackers can deliberately produce excessive messages, consuming all available resources and potentially crashing the Kafka brokers.
+If not properly secured, attackers can manipulate schemas, leading to potential data corruption.
+Through the Control API, malicious actors could potentially create, delete, or alter topics.
+Without stringent authentication, unauthorized producers can send malicious data into Kafka topics.
+Without proper authentication and authorization, unauthorized users can access Kafka topics and consume messages, potentially accessing sensitive data.
+By sending a large number of requests or large-size messages, an attacker might exhaust system resources.
+Kafka's reliance on Zookeeper for distributed management can be exploited if Zookeeper's security is misconfigured, allowing unauthorized access.
