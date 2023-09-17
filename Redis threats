@@ -1,0 +1,16 @@
+Failure to secure backups can lead attackers to gain unauthorized access to backup files, leading to data exposure.
+Some Redis configurations may allow attackers to execute arbitrary commands.
+Attackers could alter data in Redis, leading to misinformation or malicious activities.
+Using default credentials can give attackers unauthorized access if they're not changed after installation.
+Malicious requests can flood Redis, causing excessive memory utilization and potential service interruptions.
+Attackers might exploit configurations to store large amounts of data in Redis, causing it to use excessive memory and potentially crash.
+Unsecured Redis configurations or lack of encryption can lead to unintentional data exposure.
+Attackers can intentionally overwrite keys, causing data loss or corruption.
+Exploiting vulnerabilities in Redis' Lua scripting to execute arbitrary code.
+If Redis communication isn't encrypted, attackers could potentially intercept data.
+Attackers may exploit input validation vulnerabilities in applications using Redis to inject malicious commands.
+Malicious nodes could mimic legitimate nodes, leading to data breaches in replication setups.
+Redis snapshots (.rdb files) stored without proper security can be accessed, leading to data breaches.
+Redis instances without proper authentication can be accessed by unauthorized users. This could lead to unauthorized operations on data.
+Attackers could subscribe to a Redis Pub/Sub channel and eavesdrop on sensitive data.
+Leaking the Redis version through errors or headers may give potential attackers insight into known vulnerabilities.
