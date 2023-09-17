@@ -1,0 +1,15 @@
+The administrative interface, if exposed, can be a point of entry for attackers to control the entire MQ environment.
+Attackers might alter the properties of an MQ channel, potentially leading to misrouted messages or denial of service.
+In IBM MQ clusters, malicious actors might alter configuration to route messages to unauthorized or malicious nodes.
+Attackers might exploit default admin or app credentials to gain unauthorized access to IBM MQ.
+Attackers might deliberately try to create excessive connections to the queue manager, leading to potential service disruptions.
+If logs are not properly secured, attackers might alter or delete logs to hide malicious activities.
+Attackers could potentially redirect legitimate messages to other queues, leading to potential data breaches or missed processing.
+Without proper message integrity mechanisms, attackers can alter the content of messages in transit or at rest.
+If MQ channels are not properly encrypted, attackers can potentially intercept and read message data during transit.
+Attackers could send fraudulent messages to queues by impersonating legitimate publishers, leading to misinformation or service disruptions.
+Attackers can overload queues with excessive messages, potentially leading to service disruptions or resource exhaustion.
+If not properly secured, the MQ queue manager can be accessed and controlled, leading to potential service disruptions or message manipulation.
+By altering queue properties, attackers might change the behavior of the queue, like persistence or priority, impacting message delivery.
+Without strong authentication and authorization, attackers might read, write or delete messages from MQ queues, leading to data leaks or denial of service.
+Using outdated IBM MQ versions can expose the system to known exploits, leading to potential data breaches or service disruptions.
