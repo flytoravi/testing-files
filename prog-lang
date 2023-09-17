@@ -1,0 +1,84 @@
+perl:
+Use of Externally-Controlled Format String
+Use of Incorrect Operator
+Executable Regular Expression Error
+Permissive Regular Expression
+Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
+Improper Resolution of Path Equivalence
+Improper Link Resolution Before File Access ('Link Following')
+Improper Handling of File Names that Identify Virtual Resources
+External Control of File Name or Path
+Improper Neutralization of Equivalent Special Elements
+Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
+Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
+Improper Neutralization of Argument Delimiters in a Command ('Argument Injection')
+Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
+Improper Neutralization of Special Elements used in an LDAP Query ('LDAP Injection')
+XML Injection (aka Blind XPath Injection)
+Improper Neutralization of CRLF Sequences ('CRLF Injection')
+Improper Control of Generation of Code ('Code Injection')
+Missing XML Validation
+Misinterpretation of Input
+Improper Output Neutralization for Logs
+
+PHP:
+Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
+Improper Resolution of Path Equivalence
+Improper Link Resolution Before File Access ('Link Following')
+Improper Handling of File Names that Identify Virtual Resources
+External Control of File Name or Path
+Improper Neutralization of Equivalent Special Elements
+Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
+Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
+Improper Neutralization of Argument Delimiters in a Command ('Argument Injection')
+Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
+Signal Handler Race Condition
+Race Condition within a Thread
+Uncaught Exception
+Declaration of Catch for Generic Exception
+Declaration of Throws for Generic Exception
+Missing Default Case in Multiple Condition Expression
+Omitted Break Statement in Switch
+Uncaught Exception
+Declaration of Catch for Generic Exception
+Declaration of Throws for Generic Exception
+Race Condition within a Thread
+
+Python:
+Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
+Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
+Improper Neutralization of Argument Delimiters in a Command ('Argument Injection')
+Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
+Signal Handler Race Condition
+Race Condition within a Thread
+Declaration of Catch for Generic Exception
+Declaration of Throws for Generic Exception
+Missing Default Case in Multiple Condition Expression
+Omitted Break Statement in Switch
+Uncaught Exception
+Declaration of Catch for Generic Exception
+Declaration of Throws for Generic Exception
+Race Condition within a Thread
+Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
+Improper Resolution of Path Equivalence
+Improper Link Resolution Before File Access ('Link Following')
+Improper Handling of File Names that Identify Virtual Resources
+External Control of File Name or Path
+Improper Neutralization of Equivalent Special Elements
+
+Ruby:
+Deserialization of Untrusted Data
+Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
+Improper Resolution of Path Equivalence
+Improper Link Resolution Before File Access ('Link Following')
+Improper Handling of File Names that Identify Virtual Resources
+External Control of File Name or Path
+Improper Neutralization of Equivalent Special Elements
+Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
+Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
+Improper Neutralization of Argument Delimiters in a Command ('Argument Injection')
+Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
+Improper Neutralization of Special Elements used in an LDAP Query ('LDAP Injection')
+XML Injection (aka Blind XPath Injection)
+Improper Neutralization of CRLF Sequences ('CRLF Injection')
+Improper Control of Generation of Code ('Code Injection')
