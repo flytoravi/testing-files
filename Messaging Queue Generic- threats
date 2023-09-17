@@ -1,0 +1,13 @@
+Attackers gain unauthorized access to messages in the queue, potentially exposing sensitive information. This threat arises due to weak authentication, authorization, or improper configuration.
+Attackers capture and resend valid messages from the queue, potentially leading to unauthorized actions, duplicate processing, or data corruption.
+Messages in the queue are altered maliciously, leading to incorrect data being processed or acted upon by the receiving application component.
+Attackers send messages that the receiving application cannot handle, potentially causing it to crash or become unresponsive.
+Attackers delete messages from the queue before they can be processed, leading to data loss or system disruption.
+Attackers flood the message queue with numerous messages, causing it to become overwhelmed and potentially crash or become slow to respond.
+Attackers exploit vulnerabilities or misconfigurations in the messaging queue system to gain higher privileges, allowing them to perform unauthorized actions.
+The messaging queue system lacks sufficient logging and monitoring, making it difficult to detect or trace malicious activities.
+Attackers induce errors in the messaging queue system to obtain error messages that may disclose sensitive information about the system's inner workings or configurations.
+Attackers exploit systems where default credentials haven't been changed, gaining unauthorized access to the messaging queue.
+Attackers position themselves between the sender and receiver in the messaging system, intercepting, modifying, or redirecting messages.
+Users or applications are granted more permissions than necessary in the messaging system, allowing unauthorized actions or data exposures.
+Attackers exploit vulnerabilities associated with outdated or legacy protocols still supported by the messaging system.
