@@ -1,0 +1,21 @@
+An SQL injection attack consists of the insertion or injection of a malicious SQL query via the input data from the client to the application. Successful exploitation can read sensitive data from the database, modify database data, execute administration operations on the database, recover the content of a given file, and execute arbitrary commands on the server.
+Cross-Site Scripting (XSS) attacks occur when an attacker uses a web application to send malicious code, usually in the form of a browser side script, to a different end-user. The end user's browser executes the code because it came from a trusted server.
+An attacker can navigate the file directory structure of a web server and access restricted directories. This can be done by supplying strings containing characters like '..' to move up in the directory structure.
+This attack consumes the target resource's availability and denies access to legitimate users. Examples include overwhelming a target's CPU, network bandwidth, or disk space.
+An attacker identifies and exploits weaknesses in the server or network to gain unauthorized access, retrieve sensitive data, or execute malicious activities.
+An attacker is able to execute arbitrary commands on the target server by including malicious files from a remote location. The web application allows the inclusion of external files without proper validation.
+Attackers trick a user into executing unwanted actions on a web application where the user is authenticated, potentially causing the user to perform actions unintentionally.
+Attackers exploit web sessions to steal information or perform actions as an authenticated user. This can be done by obtaining session tokens or by predicting session token values.
+Attackers exploit web applications that fail to properly validate and sanitize input and force users to perform unintended redirects or forwards, possibly to phishing or malicious sites.
+Web applications expose sensitive data due to insufficient encryption, weak algorithms, or other security flaws, allowing attackers to obtain unauthorized access to confidential information.
+Attackers exploit vulnerable XML processors by referencing an external entity, which can lead to data disclosure, denial of service, server-side request forgery, or other malicious effects.
+Attackers insert themselves between two parties and intercept, possibly alter, and relay messages between the two, deceiving them into thinking they are directly communicating with each other.
+Applications deserialize malicious objects supplied by an attacker. This can result in remote code execution, replay attacks, or privilege escalation attacks.
+Attackers exploit weaknesses in the authentication or session management functions. This can allow them to impersonate other users or bypass authentication mechanisms.
+Attackers exploit gaps in security configurations or misconfigurations to gain unauthorized access. This can occur when settings are too permissive or when sensitive data is exposed inadvertently.
+The product uses a CAPTCHA challenge, but the challenge can be guessed or automatically recognized by a non-human actor.
+The product assigns the address 0.0.0.0 for a database server, a cloud service/instance, or any computing resource that communicates remotely.
+The product acts as an intermediary HTTP agent (such as a proxy or firewall) in the data flow between two entities such as a client and server, but it does not interpret malformed HTTP requests or responses in ways that are consistent with how the messages will be processed by those entities that are at the ultimate destination.
+The product allows the attacker to upload or transfer files of dangerous types that can be automatically processed within the product's environment.
+The web application does not restrict or incorrectly restricts frame objects or UI layers that belong to another application or domain, which can lead to user confusion about which interface the user is interacting with.
+The product displays information or identifiers to a user, but the display mechanism does not make it easy for the user to distinguish between visually similar or identical glyphs (homoglyphs), which may cause the user to misinterpret a glyph and perform an unintended, insecure action.
