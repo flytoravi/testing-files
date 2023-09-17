@@ -1,0 +1,15 @@
+An attacker may gain unauthorized access to a LUN (Logical Unit Number), potentially gaining access to sensitive data.
+Manipulation of iSCSI targets can disrupt storage services or reroute data.
+Exploiting poor zoning configurations to gain unauthorized access to storage devices.
+Intercepting and potentially altering storage traffic by being in the data path.
+Exploiting SNMP weaknesses to gain unauthorized control over SAN devices.
+Updating the SAN device with malicious firmware to gain control or exfiltrate data.
+Overloading the storage system with a flood of illegitimate requests causing a denial of service.
+Monitoring network traffic to intercept and analyze storage data packets.
+Changing storage device settings to gain unauthorized access or disrupt services.
+Attempting multiple logins to gain unauthorized access to the SAN management interface.
+Physical tampering with SAN switches or devices to reroute data or gain unauthorized access.
+Sensitive data remains on storage media after deletion, allowing potential unauthorized recovery.
+Exploiting poorly designed or insecure APIs to control or query the SAN.
+An employee or other trusted person uses their access to compromise the SAN.
+Manipulating personnel to disclose information or gain unauthorized access.
