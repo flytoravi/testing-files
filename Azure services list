@@ -1,0 +1,61 @@
+Azure service lists
+Azure VM threats:
+Unauthorized access refers to the unauthorized use of resources, data, or services within an azure vm instance or environment. It occurs when an entity gains access to a system or data without proper authentication or authorization
+A data breach involves the unauthorized access, acquisition, or disclosure of sensitive data within an azure vm environment. This can include personally identifiable information (PII), financial data, intellectual property, or any other confidential information.
+A Denial of Service (DoS) attack aims to disrupt the availability of resources or services within an azure vm environment. This is achieved by overwhelming the target system with a high volume of traffic or requests, causing legitimate users to be unable to access the resources.
+An insider threat involves individuals who have authorized access to the azure vm environment, intentionally or unintentionally causing harm. This threat can include employees, contractors, or other individuals with legitimate access to the system
+Malware infection refers to the introduction of malicious software into an azure vm environment with the intent to compromise the system's integrity, confidentiality, or availability. Malware can take various forms, including viruses, worms, Trojans, ransomware, and more.
+Privilege escalation involves attackers gaining higher levels of access to resources or systems than initially granted. This allows them to perform unauthorized actions and potentially compromise the security of an azure vm environment.
+Man-in-the-Middle (MitM) attacks involve attackers intercepting and manipulating communications between two parties without their knowledge. This can lead to the exposure of sensitive data or unauthorized access.
+Remote Code Execution (RCE) occurs when an attacker exploits a vulnerability to execute arbitrary code on a remote server. This can lead to complete control over the system and unauthorized access to sensitive data.
+SQL Injection involves attackers manipulating SQL queries through user input fields to gain unauthorized access to a database or perform unintended actions. This can lead to data exposure, data manipulation, and potential system compromise.
+Cross-Site Scripting (XSS) involves attackers injecting malicious scripts into web applications that are then executed by other users' browsers. This can lead to unauthorized access to user sessions, data theft, and more.
+Eavesdropping involves attackers intercepting and monitoring network communications between users or systems. This can lead to the exposure of sensitive information, credentials, and data privacy violations.
+Data interception involves attackers capturing and copying data as it flows between systems or users. This can lead to the exposure of sensitive information and data privacy violations.
+Data loss refers to the unintended removal or destruction of data, often due to technical failures, human errors, or malicious activities. This can lead to operational disruptions, loss of sensitive information, and compliance issues.
+Data tampering involves unauthorized modification or alteration of data. Attackers may change data to achieve various objectives, such as stealing funds or undermining data integrity.
+Identity theft involves attackers stealing user credentials or personal information to impersonate legitimate users. This can lead to unauthorized access to systems, data breaches, and fraudulent activities.
+Resource exhaustion involves attackers overwhelming system resources, such as CPU, memory, or network bandwidth, to disrupt the availability of an azure vm environment. This can lead to degraded performance or complete unavailability.
+Information disclosure involves attackers gaining unauthorized access to sensitive information, such as configuration details, passwords, or data, that should not be accessible to them. This can lead to privacy violations and potential misuse of the exposed information.
+Brute force attacks involve attackers attempting multiple combinations of passwords or authentication credentials to gain unauthorized access. This method relies on the sheer number of attempts to eventually guess the correct credentials.
+Account hijacking involves attackers gaining unauthorized control over user accounts by exploiting vulnerabilities or stealing credentials. This can lead to unauthorized access, data breaches, and misuse of the compromised accounts.
+
+Azure VNET:
+Accessing services, data, or features without proper authentication or authorization.
+Unauthorized access and extraction of sensitive or confidential data.
+Disrupting the availability of a service or resource.
+Malicious actions by employees or contractors who have legitimate access.
+Malicious software is installed within the VNET, potentially leading to data breaches, unauthorized access, etc.
+Unauthorized elevation of user roles or privileges within the system.
+Unauthorized interception of data packets in transit, potentially altering or stealing the data.
+The attacker executes arbitrary code on a target system without authorized access.
+Injecting malicious SQL queries through input or manipulation of an existing query.
+Injection of malicious scripts into web applications, affecting users who view the injected page.
+Unauthorized interception of data during transmission.
+Unauthorized access and capture of data in transit or at rest
+Unintentional or intentional loss of data due to various factors like system failure, deletion, or corruption.
+Unauthorized modification of data.
+Unauthorized use of another user's identification
+Depleting system resources to the point where it can no longer perform its function.
+Unauthorized release of sensitive information.
+Repeatedly attempting different passwords or encryption keys until the correct one is found.
+Unauthorized access and control over another user's account.
+
+Azure key vault:
+
+Attackers gain access to Azure Key Vault without appropriate permissions, leading to unauthorized operations like decryption, key creation, etc.
+Unauthorized exposure of cryptographic keys, potentially enabling unauthorized access and decryption.
+Authorized internal personnel misuse their privileges to access sensitive keys and data.
+Unauthorized individuals gaining physical access to infrastructure where Key Vault is hosted
+Exploiting vulnerabilities in the underlying infrastructure that supports Azure Key Vault.
+Utilization of weak or outdated cryptographic algorithms that can be easily broken
+Gaining sensitive information by exploiting the physical implementation of a cryptographic system.
+Weak or misconfigured APIs and access controls that lead to unauthorized operations.
+Residual data remains accessible after deletion or termination operations
+Accidental or intentional deletion of critical data, leading to its loss
+Keys expiring without proper rotation, leading to downtime or security risks.
+Overloading the Key Vault service with requests, making it unavailable for legitimate users.
+Insufficient logging and monitoring can lead to delayed or missed detection of malicious activities.
+Exploiting vulnerabilities in one region to gain unauthorized access to data or keys in another.
+Vulnerabilities in third-party libraries or services used by Azure Key Vault can be exploited.
+Inadequate backup and disaster recovery mechanisms can lead to irreversible loss of keys or data.
