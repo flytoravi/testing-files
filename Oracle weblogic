@@ -1,0 +1,22 @@
+Attackers exploit vulnerabilities to run malicious code remotely, giving unauthorized access or control over server resources.
+Attackers exploit inadequate input validation to access directories and files outside the intended directory structure.
+Attackers insert malicious SQL code into query strings, leading to unauthorized data viewing, corruption, or other malicious activities.
+Attackers exploit vulnerable XML processors to reference external entities, leading to unauthorized file viewing, denial of service, or SSRF.
+Attackers pass crafted serialized objects to an application. Deserializing these objects may lead to RCE or other malicious activities.
+Attackers manipulate an application to send malicious requests, potentially allowing interactions with internal resources.
+Attackers manipulate input, such as URLs or form data, to access unauthorized objects leading to unauthorized data access or alteration.
+Attackers send data to a buffer in quantities exceeding its capacity, leading to overflow. This can result in system crashes or RCE.
+Attackers inject malicious scripts into web pages. When executed, these scripts can steal information, modify web content, or act on behalf of authenticated users without consent.
+Attackers deceive users into unknowingly submitting requests to a web application, leading to unauthorized actions.
+Attackers identify and exploit flaws in application's logic or business processes, resulting in unauthorized actions or bypassing controls.
+Attackers capture or predict a user's session ID to impersonate them, potentially leading to unauthorized actions, data access, or account takeover.
+Attackers intercept, modify, or redirect communications between a user and an application server.
+Attackers exploit weak or misconfigured authorization mechanisms to perform unauthorized actions.
+Poor logging and monitoring allow attackers to carry out malicious activities undetected, delaying incident response and increasing potential damage.
+Attackers modify parameters (e.g., URL, form inputs) to alter application data or behavior.
+Attackers inject malicious commands into vulnerable applications to be executed on the server.
+Attackers consume excessive application resources (CPU, memory, disk space), leading to denial of service.
+Attackers exploit inadequate authentication, session management, or credential management to impersonate users.
+Attackers locate and exploit hard-coded credentials in software to gain unauthorized access.
+Attackers overwhelm the target system, application, or network with traffic, causing a denial of service for legitimate users.
+
