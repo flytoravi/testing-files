@@ -1,0 +1,4 @@
+1. Disable JNDI lookups where possible  2. Input validation  3. Code reviews to identify insecure JNDI calls  4. Web Application Firewall (WAF) to filter malicious inputs  5. Least privilege access control for JNDI resources
+1. Input validation and sanitization  2. Prepared statements for SQL queries  3. Secure coding practices to avoid OS command injection  4. Role-Based Access Control (RBAC)  5. Web Application Firewall (WAF)
+1. File type verification  2. File upload size limits  3. Secure file upload locations  4. Malware scanning on uploaded files  5. Role-Based Access Control (RBAC) for file upload features
+1. Avoid deserialization of untrusted data  2. Implement object signing  3. Use safe deserialization libraries  4. Input validation  5. Least privilege execution for deserialization processes
