@@ -1,0 +1,8 @@
+1. Input validation for URLs  2. Whitelisting allowed domains  3. Web Application Firewall (WAF) rules to block SSRF patterns  4. Network segmentation to limit outbound requests
+1. Rate limiting  2. Connection timeout settings  3. Use of mod_reqtimeout or mod_antiloris modules  4. Firewall rules to block malicious IPs
+1. Input validation  2. Use of safe APIs for command execution  3. Least privilege execution  4. Web Application Firewall (WAF)
+1. Strong random token generation  2. Secure session management  3. Token timeout policies  4. Anti-CSRF mechanisms like SameSite cookies
+1. Disable external entities in XML parsers  2. XML schema validation  3. Web Application Firewall (WAF) rules to block XXE patterns  4. Patch XML processors
+1. Input validation for CRLF characters  2. URL encoding  3. Use of mod_security or similar modules  4. Web Application Firewall (WAF)
+1. Secure session management  2. Session ID regeneration after login  3. HTTPS for session cookies  4. Session timeout policies
+1. ServerTokens and ServerSignature directives to minimal  2. Custom error pages  3. Web Application Firewall (WAF) to filter out server info  4. Regular patching and updates
