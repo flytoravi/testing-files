@@ -1,0 +1,8 @@
+Apache Server Side Request Forgery (SSRF)
+Slowloris DoS Attack
+Apache Command Injection
+Apache CSRF Token Prediction
+Apache XML External Entity (XXE) Attack
+Apache CRLF Injection
+Session Fixation on Apache
+Apache Server Version Exposure
