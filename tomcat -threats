@@ -1,0 +1,4 @@
+Attackers use malicious inputs to introduce Java Naming and Directory Interface references in Tomcat, potentially leading to data breaches or remote code execution.
+Attackers exploit special elements, such as those used in SQL queries or OS commands, to manipulate application behaviors or achieve unintended operations.
+Attackers exploit file upload functionalities in Tomcat applications to upload malicious files, potentially leading to arbitrary code execution.
+Attackers exploit insecure deserialization processes in Tomcat to execute arbitrary code, potentially leading to remote command execution or privilege escalation.
