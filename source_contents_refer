@@ -13,3 +13,21 @@
 13.Attackers position themselves between Elasticsearch clients and servers, intercepting, modifying, or redirecting queries and responses.
 14.In the absence of encryption (e.g., using HTTPS), data transferred between Elasticsearch nodes or between client and server can be intercepted and read by attackers.
 15.Attackers find exposed API keys related to Elasticsearch, allowing them unauthorized access or the ability to perform actions on behalf of legitimate users.
+
+
+Countermeasures and Mitigations
+Implement strong authentication methods like multi-factor authentication (MFA), employ strong passwords, and properly configure access rights.
+Do not expose Elasticsearch clusters to the internet. Use firewalls, VPNs, and reverse proxies to limit access.
+Regularly update Elasticsearch to the latest version and patch vulnerabilities. Limit permissions of Elasticsearch service accounts.
+Use role-based access control (RBAC) to restrict who can modify data. Enable index-level security.
+Implement rate limiting, and use protective measures like proxies or Web Application Firewalls (WAF) to filter out malicious traffic.
+Limit access to metadata and system indices via access controls and firewalls. Disable unnecessary features and indices.
+Use strong authentication and authorization policies for snapshot APIs. Only expose APIs to trusted networks.
+Regularly review and update role-based access control settings. Patch to the latest Elasticsearch version.
+Implement comprehensive logging and monitoring, and use tools like Elasticsearch's own X-Pack or other SIEM tools.
+Use node-to-node encryption and only allow trusted nodes to join the cluster. Authenticate each node.
+Disable dynamic scripting or restrict it to only trusted users and safe operations.
+Limit and monitor access to internal or system indices through access controls and firewalls.
+Use HTTPS and certificate-based authentication between clients and servers.
+Use HTTPS for data in transit and encryption at rest for data storage.
+Never hardcode API keys. Use secure methods for storage and retrieval of API keys, like environment variables or secret management services.
