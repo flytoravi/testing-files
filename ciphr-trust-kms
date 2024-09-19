@@ -1,0 +1,83 @@
+As a CipherTrust key management solution expert, here is a detailed list of security-focused questions to ask the infrastructure provisioning and enterprise key management solution team, covering both physical and virtual deployments:
+
+### 1. **Encryption Management**
+   - How are encryption keys generated, stored, and managed in both physical and virtual deployments of CipherTrust?
+   - Are encryption keys stored within hardware security modules (HSMs) for physical deployments? If so, what measures are in place to ensure the security of these HSMs?
+   - What encryption algorithms and standards are supported, and how are they validated to meet compliance requirements (e.g., FIPS 140-2)?
+   - How are encryption keys protected during transmission between CipherTrust and connected systems?
+   - Is there any encryption mechanism used to secure data in transit and at rest, especially in virtual environments where the CipherTrust solution is deployed?
+
+### 2. **Access Control & Authentication**
+   - How is access to the CipherTrust key management platform controlled? Are role-based access controls (RBAC) implemented?
+   - What authentication mechanisms are in place for administrators and users? Are multi-factor authentication (MFA) and least privilege principles enforced?
+   - How is access to sensitive key material logged, and how often are access permissions reviewed?
+   - In the case of physical deployment, how is physical access to the key management appliances or HSMs restricted and monitored?
+   - For virtual deployments, what network segmentation and security controls are implemented to limit access to the key management virtual instance?
+
+### 3. **Key Lifecycle Management**
+   - How are key generation, distribution, rotation, and destruction managed throughout the key lifecycle?
+   - What automation processes are in place for key rotation, and how is this process secured to ensure that it happens without disrupting operations?
+   - How are cryptographic keys backed up and restored in both physical and virtual environments?
+   - What measures are in place to prevent key misuse or unauthorized access to key material during the key's lifecycle?
+   - Are there clear policies in place for key expiration and destruction to prevent key reuse or compromise?
+
+### 4. **Compliance & Auditing**
+   - How does the CipherTrust solution ensure compliance with industry security standards (e.g., NIST, PCI-DSS, GDPR, HIPAA)?
+   - What auditing and logging capabilities are in place for key usage, key access, and system changes in both physical and virtual deployments?
+   - Are the logs tamper-proof, and where are they stored? How is access to logs controlled?
+   - How are compliance reports generated, and are they automatically aligned with regulatory standards?
+   - How frequently are the CipherTrust deployments audited, and what is the process for remediating security findings?
+
+### 5. **Physical Security**
+   - For physical deployments, how is the physical security of CipherTrust appliances (e.g., HSMs) ensured? Are they stored in secure data centers?
+   - What environmental and physical controls (e.g., video surveillance, restricted access) are in place to prevent unauthorized access to CipherTrust hardware?
+   - How are CipherTrust appliances transported securely when being shipped or moved between facilities?
+   - In case of hardware failure, what is the procedure for secure decommissioning and destruction of hardware containing sensitive key material?
+
+### 6. **Virtual Security**
+   - For virtual deployments, what measures are in place to secure the virtual CipherTrust instances in cloud or on-prem environments?
+   - How is network traffic to and from the virtual key management solution secured and segmented?
+   - Are virtual instances hardened according to security best practices (e.g., disabling unnecessary services, patch management)?
+   - What security controls are in place to prevent hypervisor-level attacks or unauthorized access to the virtual CipherTrust environment?
+   - How is the virtual deployment scaled securely, and how are backup/recovery processes for virtual instances handled?
+
+### 7. **Backup & Recovery**
+   - What are the procedures for securely backing up cryptographic keys and configurations in both physical and virtual environments?
+   - How are backup data encrypted and stored, and what are the access controls for backup data?
+   - What is the recovery process in case of a disaster or hardware failure, and how quickly can the CipherTrust system be restored to operational status?
+   - Are backups stored in geographically diverse locations to ensure redundancy and recovery capability?
+   - How often are disaster recovery drills performed to test the integrity and effectiveness of the backup and recovery process?
+
+### 8. **Monitoring & Incident Response**
+   - How is real-time monitoring of CipherTrust deployments managed, and what tools or systems are used for alerting and reporting suspicious activities?
+   - Are there automated alerts for key management anomalies, unauthorized access, or policy violations?
+   - How are logs and monitoring data integrated into a centralized Security Information and Event Management (SIEM) solution?
+   - What is the incident response plan for breaches involving CipherTrust key management? How quickly can compromised keys be revoked or rotated?
+   - Are there pre-configured responses for specific security incidents, such as key compromise or physical tampering of key management devices?
+
+### 9. **Key Export/Import and Integration Security**
+   - How are keys securely exported/imported from the CipherTrust solution to other systems or environments?
+   - What cryptographic standards are used for key wrapping or transport to ensure key material is never exposed during migration between systems?
+   - How are third-party integrations with CipherTrust (e.g., database encryption, application-level encryption) secured?
+   - What APIs are available for integrating CipherTrust with external systems, and how is API access secured?
+   - Are there logging and monitoring mechanisms for API calls that interact with key material?
+
+### 10. **Performance and Scalability**
+   - How does the CipherTrust solution handle high availability and fault tolerance in both physical and virtual environments?
+   - What measures are in place to scale the key management system without compromising security as workloads increase?
+   - For physical deployments, are additional appliances required for scaling, and how are they securely integrated into the existing environment?
+   - How is secure scaling handled in virtualized or cloud deployments (e.g., multi-region deployments, key replication)?
+
+### 11. **High Availability & Redundancy**
+   - What measures are in place to ensure high availability for both physical and virtual CipherTrust solutions?
+   - How is key replication handled across different sites or regions to ensure continuity in case of failure or disaster?
+   - Are there automated failover mechanisms to switch to backup key management systems in the event of an outage?
+   - How are keys synchronized between primary and secondary sites to ensure seamless operations?
+
+### 12. **Key Compromise & Revocation**
+   - What is the process for responding to suspected or confirmed key compromise in both physical and virtual environments?
+   - How quickly can compromised keys be revoked, replaced, and propagated across all integrated systems?
+   - Is there a predefined process for notifying affected parties in the event of a key compromise?
+   - What safeguards are in place to detect and respond to attempts at unauthorized key access or manipulation?
+
+These questions will provide a thorough understanding of how CipherTrust key management is handled from both physical and virtual security perspectives, ensuring a robust security posture across the entire key lifecycle.
