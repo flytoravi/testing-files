@@ -1,0 +1,69 @@
+As an ESXi hypervisor security expert, here is a comprehensive list of security-focused questions to ask the infrastructure provision and management team:
+
+### 1. **Access Control & Authentication**
+   - How is access to the ESXi hypervisors controlled and managed? 
+   - Are role-based access controls (RBAC) implemented for ESXi management?
+   - What authentication mechanisms are in place (e.g., multifactor authentication)?
+   - How are SSH and shell access to the hypervisor restricted and monitored?
+   - Is the ESXi management interface (vSphere) secured behind a VPN or bastion host?
+   - How often are access permissions reviewed, and what is the process for revoking access when personnel leave?
+
+### 2. **Patch Management & Updates**
+   - What is the process for patching ESXi hypervisors, and how often are security patches applied?
+   - Are patches tested in a non-production environment before being applied to production?
+   - How is patch deployment automated or scheduled to minimize downtime and ensure timely updates?
+   - What measures are taken to verify the integrity of patches before applying them?
+
+### 3. **Network Segmentation & Configuration**
+   - How is network segmentation enforced between ESXi management networks and production networks?
+   - What security measures are in place for VM-to-VM communication within the hypervisor?
+   - How is the management network isolated from other traffic, and is it protected by firewalls or access control lists (ACLs)?
+   - Are VLANs or other network segmentation techniques used to separate different workload types or tenant environments?
+
+### 4. **Logging & Monitoring**
+   - What logging mechanisms are enabled on ESXi hypervisors (e.g., syslog, vSphere events)?
+   - How are logs centralized and analyzed for suspicious activities, and which log management tools are used (e.g., SIEM)?
+   - Are there any alerts or notifications set up for unauthorized access attempts or configuration changes?
+   - How is log retention configured, and what is the retention period for compliance purposes?
+
+### 5. **Compliance with Security Standards (NIST, CIS, etc.)**
+   - Is the ESXi environment configured according to the CIS VMware ESXi benchmarks or other relevant hardening guides?
+   - How is compliance with security standards like NIST, CIS, or other frameworks maintained and monitored?
+   - Are there regular audits or vulnerability assessments performed on the ESXi infrastructure to ensure compliance?
+   - How are findings from security assessments remediated, and what is the timeframe for addressing high-priority issues?
+
+### 6. **Encryption & Data Protection**
+   - Are VM disks encrypted, and how is encryption managed (e.g., using VMware’s VM encryption or other solutions)?
+   - How is data at rest and in transit protected in the ESXi environment (e.g., TLS for management traffic, encryption for VMotion)?
+   - How are encryption keys managed and rotated, and what key management system (KMS) is in place?
+   - Is backup data for VMs and ESXi configurations encrypted and securely stored?
+
+### 7. **Best Practices for Securing ESXi**
+   - What is the process for securing the ESXi host configuration during the initial deployment?
+   - Are there any tools or automated frameworks used to enforce security best practices across the hypervisor environment (e.g., VMware vSphere Security Configuration Guide)?
+   - How is the ESXi firewall configured to minimize the attack surface, and are unused services disabled?
+   - How are system administrators trained on ESXi security best practices and compliance requirements?
+
+### 8. **High Availability & Incident Response**
+   - What security measures are in place to ensure high availability and fault tolerance of the ESXi hypervisor environment?
+   - How is the ESXi environment protected against Distributed Denial of Service (DDoS) or similar attacks?
+   - What is the incident response process for detecting and responding to a security breach on an ESXi host?
+   - Are there disaster recovery plans in place for ESXi, and how often are they tested?
+
+### 9. **Third-Party Integrations & API Security**
+   - How are third-party integrations with ESXi (e.g., monitoring tools, backup solutions) secured?
+   - What security measures are in place to protect the ESXi APIs, and are API logs regularly reviewed?
+   - Are service accounts used for API integrations properly scoped with least privilege principles?
+   - How are the risks of third-party tools assessed before integration with the hypervisor environment?
+
+### 10. **Backup & Recovery Security**
+   - How are ESXi configuration backups secured, and are they encrypted?
+   - What is the frequency of backups for ESXi configurations, and where are backups stored?
+   - Are backups regularly tested for integrity, and how quickly can they be restored in the event of an attack or failure?
+
+### 11. **Change Management & Configuration Control**
+   - What change management processes are in place to ensure that all configuration changes are tracked and authorized?
+   - Are there automated tools or scripts in place to detect unauthorized configuration changes?
+   - How are configuration baselines established, and are they regularly reviewed for compliance with security policies?
+
+These questions will help ensure that all critical aspects of ESXi hypervisor security are addressed from a security, compliance, and operational perspective.
