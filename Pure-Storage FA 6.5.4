@@ -1,0 +1,71 @@
+Here’s the list of security controls framed as questions to check with the storage team for **Pure Storage FA 6.5.4**:
+
+### 1. **Data Encryption**
+   - Is data at rest on the Pure Storage FA 6.5.4 encrypted, and what encryption algorithms are being used?
+   - Is encryption enabled for data in transit, and if so, what protocols are used (e.g., TLS or IPsec)?
+   - How are encryption keys managed? Does the system integrate with an external Key Management System (KMS), and is it FIPS 140-2 compliant?
+   - What is the process for encryption key rotation, storage, and destruction, especially during hardware replacements or decommissioning?
+
+### 2. **Access Control & Authentication**
+   - What role-based access controls (RBAC) are implemented for managing the Pure Storage FA 6.5.4 system?
+   - Is multi-factor authentication (MFA) enabled for administrative and privileged access to the array?
+   - How is SSH and API access to the storage array controlled and restricted to authorized personnel?
+   - Are audit logs for access control regularly reviewed, and what process is followed for revoking access for former employees or contractors?
+
+### 3. **Compliance & Security Standards**
+   - Is the Pure Storage FA 6.5.4 product compliant with security standards such as FIPS 140-2, SOC 2, GDPR, or HIPAA?
+   - How does the system address compliance requirements for data protection and privacy? Are there specific certifications available for the product?
+   - What auditing and reporting mechanisms are available to monitor and ensure compliance with security standards?
+   - Can the system generate detailed reports for compliance audits, and how is sensitive data within these reports protected?
+
+### 4. **Patch Management & Firmware Updates**
+   - What is the process for applying firmware updates and security patches to Pure Storage FA 6.5.4? Are these updates automated or manual?
+   - How are patches tested prior to deployment to avoid introducing vulnerabilities? How often are patches released?
+   - What is the vulnerability management process for identifying and prioritizing security risks in the system?
+
+### 5. **Monitoring & Logging**
+   - What monitoring tools are available for real-time security and performance monitoring of Pure Storage FA 6.5.4?
+   - How are logs and audit trails from the array collected and integrated into a SIEM (Security Information and Event Management) system?
+   - Are there automated alerts set up for detecting unauthorized access, configuration changes, or potential security breaches?
+   - What is the incident response plan in case of a security breach? How quickly can compromised systems be isolated or remediated?
+
+### 6. **Security of Storage Components (Physical & Virtual)**
+   - What physical security controls are in place to protect the Pure Storage FA 6.5.4 system in data centers (e.g., restricted access, surveillance)?
+   - How is physical access to the storage hardware controlled and monitored for tampering?
+   - How is security ensured for virtualized storage environments? What protections are in place against hypervisor compromise or data leakage between virtual machines?
+   - What isolation techniques are implemented to protect data in multi-tenant environments or across different workloads?
+
+### 7. **Backup & Disaster Recovery Security**
+   - How is backup data managed and secured? Is backup data encrypted both in transit and at rest?
+   - What mechanisms are in place to ensure the integrity and availability of backups? How often are backups tested for successful recovery?
+   - How are backup systems isolated from the production environment to prevent ransomware or other attacks from affecting backups?
+   - What is the secure decommissioning process for retired or failed storage devices? Are proper sanitization procedures in place?
+
+### 8. **High Availability & Redundancy**
+   - What high availability features are available in the Pure Storage FA 6.5.4 product? How is redundancy configured to prevent data loss?
+   - Does the system support geographical redundancy, and how is data replicated across different sites or data centers?
+   - How are replication and failover processes secured to ensure that data remains encrypted and access-controlled during transitions?
+
+### 9. **Integration with Third-Party Security Tools**
+   - How does Pure Storage FA 6.5.4 integrate with third-party security tools such as SIEM, vulnerability scanners, or data loss prevention (DLP) solutions?
+   - Are there APIs available for secure monitoring and management? How is API access controlled and authenticated?
+   - What controls are in place to secure third-party integrations and ensure that they do not introduce vulnerabilities?
+   - How is API usage logged, and are these logs available for audit purposes?
+
+### 10. **Data Integrity & Anti-Ransomware Protection**
+   - What measures are in place to protect the integrity of data stored in Pure Storage FA 6.5.4 against corruption or ransomware attacks?
+   - Are there built-in ransomware detection mechanisms, such as monitoring for unusual I/O patterns or abnormal file changes?
+   - How does Pure Storage handle data integrity checks (e.g., checksums, erasure coding) to detect and prevent data corruption?
+   - What protections are in place to prevent unauthorized deletion or modification of data by insiders or external threats?
+
+### 11. **Secure Decommissioning**
+   - What is the process for securely decommissioning storage components, including securely wiping data from retired drives or arrays?
+   - How are encryption keys handled during the decommissioning process to ensure data cannot be recovered from decommissioned hardware?
+   - Is there a certification or documented process for ensuring secure destruction or disposal of hardware?
+
+### 12. **Ransomware and Insider Threat Protection**
+   - What protections are in place to detect and mitigate insider threats, such as unauthorized data deletion or theft by privileged users?
+   - How are alerts and monitoring configured to detect unusual activity that could indicate a ransomware attack or insider threat?
+   - What mechanisms are available to ensure rapid recovery from a ransomware attack? Are immutable snapshots or backups in place to prevent data tampering?
+
+These questions will help guide the storage team in reviewing the key security controls for the Pure Storage FA 6.5.4 product and ensuring it meets your organization’s security requirements.
