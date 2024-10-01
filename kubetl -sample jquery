@@ -1,6 +1,3 @@
+kubectl get pods --all-namespaces -o=jsonpath='{range .items[*]}{@.metadata.namespace}:{@.metadata.name}:{range @.spec.containers[*]}{.image}{"="}{.imagePullPolicy}{"\n"}{end}{end}'
+kubectl get pods --all-namespaces -o=jsonpath='{range .items[*]}{@.metadata.namespace}:{@.metadata.name}:{range @.spec.containers[*]}{.name}{"\n"}{"securityContext="}{@.securityContext}{"\n"}{end}{end}'
 kubectl get pods --all-namespaces -o=jsonpath='{range .items[*]}{@.metadata.namespace}:{@.metadata.name}:{range @.spec.volumes[*]}{.name}{"="}{.hostPath.path}{"\n"}{end}{end}' | grep -v 'hostPath='
-
-kubectl get pods --all-namespaces -o jsonpath='{range .items[*]}{"Namespace: "}{.metadata.namespace}{"\nPod: "}{.metadata.name}{"\nSecurity Context: "}{.spec.securityContext}{"\nContainer Security Context: "}{range .spec.containers[*]}{"\n  Container: "}{.name}{"\n  Security Context: "}{.securityContext}{"\n"}{end}{"\n"}{end}'
-
-
-kubectl get pods --all-namespaces -o jsonpath='{range .items[*]}{.metadata.namespace}{" "}{.metadata.name}{" "}{.spec.containers[*].image}{" "}{.spec.containers[*].imagePullPolicy}{"\n"}{end}'
